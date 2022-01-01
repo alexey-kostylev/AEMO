@@ -59,4 +59,12 @@ Run solution:
 	- API: Start AEMO.sln in VS2019 in debug mode and make sure it opens a swagger on https://localhost:5001/swagger/index.html
 	- WEB: in AEMO.WEB/aemo-web run "ng serve -o --ssl" which opens https://localhost:4200 where you can sell energy and see transactions
 
+## Screen shots:
+### Tests
+<img src="./test coverage.png">
+### Running API:
+<img src="./Swagger UI.png">
+
+### Running UI
 <img src="./Transaction list.png">
+<img src="./Add transaction.png">
