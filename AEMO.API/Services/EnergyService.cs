@@ -34,7 +34,7 @@ namespace AEMO.API.Services
         {
             var entity = _mapper.Map<data.Energy>(model);
 
-            if (entity.Date.DayOfWeek == DayOfWeek.Saturday || entity.Date.DayOfWeek == DayOfWeek.Sunday)
+            if (entity.Date.LocalDateTime.DayOfWeek == DayOfWeek.Saturday || entity.Date.LocalDateTime.DayOfWeek == DayOfWeek.Sunday)
             {
                 entity.Discount = WeekdayDiscount;
                 entity.Price -= model.Price * WeekdayDiscount;

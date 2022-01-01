@@ -29,8 +29,10 @@ namespace AEMO.UnitTests
         }
 
         [Theory]
-        [InlineData("2021-12-30 05:00", EnergyType.Electricity, 10, 10 , 0)] //thursday - no discount
+        [InlineData("2021-12-31 05:00", EnergyType.Electricity, 10, 10 , 0)] //Fri - no discount
+        [InlineData("2022-01-01", EnergyType.Gas, 10, 9, 0.1)] //sat
         [InlineData("2022-01-01 05:00", EnergyType.Gas, 10, 9, 0.1)] //sat
+        [InlineData("2022-01-01 23:00", EnergyType.Gas, 10, 9, 0.1)] //sat
         [InlineData("2022-01-02 05:00", EnergyType.Gas, 10, 9, 0.1)] //sun
         public async Task ShouldCreateRecord(string sDate, EnergyType energyType, decimal price, decimal expectedPrice, decimal expectedDiscount)
         {
