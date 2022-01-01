@@ -1,0 +1,21 @@
+.data-list {
+  max-width: 600px;
+}
+
+ul {
+  li {
+    span {
+      margin-right: 6px;
+    }
+  }
+}
+
+.list-row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.list-item {
+  margin-right: 12px;
+  flex-basis: 25%;
+}

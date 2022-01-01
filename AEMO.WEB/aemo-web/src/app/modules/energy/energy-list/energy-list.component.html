@@ -1,0 +1,22 @@
+<div class="data-list">
+  <div>
+    <ul>
+      <li *ngFor="let item of items">
+        <div class="list-row">
+          <div class="list-item">{{ item.date | date: "yyyy/MM/dd" }}</div>
+          <div class="list-item">
+            {{ item.energyType.toLocaleString() | lowercase }}
+          </div>
+          <div class="list-item">
+            {{ item.price | currency: "USD":"symbol":"1.0" }}
+          </div>
+          <div class="list-item">
+            <span *ngIf="item.discount"
+              >({{ item.discount | percent }} discount)</span
+            >
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

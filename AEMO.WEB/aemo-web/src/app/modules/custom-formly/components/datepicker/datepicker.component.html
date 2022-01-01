@@ -1,0 +1,14 @@
+<div class="form-group">
+  <label>{{ label }}</label>
+  <div>
+    <input
+      type="text"
+      placeholder="Datepicker"
+      class="form-control"
+      [formlyAttributes]="field"
+      [bsConfig]="{ dateInputFormat: 'DD/MM/YYYY' }"
+      bsDatepicker
+      [formControl]="control"
+    />
+  </div>
+</div>

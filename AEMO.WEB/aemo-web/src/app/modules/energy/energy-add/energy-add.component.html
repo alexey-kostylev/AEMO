@@ -1,0 +1,18 @@
+<div class="form-content">
+  <h3>Sell energy</h3>
+  <div>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <formly-form
+        [model]="model"
+        [fields]="fields"
+        [form]="form"
+      ></formly-form>
+      <div class="form-footer">
+        <button type="submit" class="btn btn-primary submit-button">
+          Sell
+        </button>
+        <a class="btn btn-light" [routerLink]="['..']">Back</a>
+      </div>
+    </form>
+  </div>
+</div>
