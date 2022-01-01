@@ -62,6 +62,7 @@ Run solution:
 ## Screen shots:
 ### Tests
 <img src="./test coverage.png">
+
 ### Running API:
 <img src="./Swagger UI.png">
 
