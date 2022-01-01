@@ -1,3 +1,5 @@
+*** Task description:
+
 As energy seller,
 
 I want a UI screen that I can enter date, energy type (electricity or gas) and price, 
@@ -38,3 +40,22 @@ Candidates who pass the test usually implement:
 • Clean implementation/algorithm
 
 • Good test coverage
+----------------------------------------------------------------------------------------------------------
+
+*** Task implementation:
+
+The task is implemented in two parts:
+
+1. API - VS2019 in .NET5
+2. WEB - Angular 12
+
+Run solution:
+  - Preparation	
+	1. Install node.js
+	2. Install npm
+	3. Install angular CLI - npm install -g @angular/cli
+	4. Go to AEMO.WEB/aemo-web and run "npm install"
+	5. Open AEMO.sln in VS2019 and compile
+  - Running
+	1. API: Start AEMO.sln in VS2019 in debug mode and make sure it opens a swagger on https://localhost:5001/swagger/index.html
+	2. WEB: in AEMO.WEB/aemo-web run "ng serve -o --ssl" which opens https://localhost:4200 where you can sell energy and see transactions
