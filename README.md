@@ -50,11 +50,11 @@ The task is implemented in two parts:
 
 Run solution:
   - Preparation	
-	1. Install node.js
-	2. Install npm
-	3. Install angular CLI - npm install -g @angular/cli
-	4. Go to AEMO.WEB/aemo-web and run "npm install"
-	5. Open AEMO.sln in VS2019 and compile
+	- Install node.js
+	- Install npm
+	- Install angular CLI - npm install -g @angular/cli
+	- Go to AEMO.WEB/aemo-web and run "npm install"
+	- Open AEMO.sln in VS2019 and compile
   - Running
-	1. API: Start AEMO.sln in VS2019 in debug mode and make sure it opens a swagger on https://localhost:5001/swagger/index.html
-	2. WEB: in AEMO.WEB/aemo-web run "ng serve -o --ssl" which opens https://localhost:4200 where you can sell energy and see transactions
+	- API: Start AEMO.sln in VS2019 in debug mode and make sure it opens a swagger on https://localhost:5001/swagger/index.html
+	- WEB: in AEMO.WEB/aemo-web run "ng serve -o --ssl" which opens https://localhost:4200 where you can sell energy and see transactions
