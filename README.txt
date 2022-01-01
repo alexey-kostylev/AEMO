@@ -1,6 +1,7 @@
 As energy seller,
 
-I want a UI screen that I can enter date, energy type (electricity or gas) and price, Such that I can see a list of all energies I entered for sell, displaying the original price if weekday and the price with 10% discount on weekend
+I want a UI screen that I can enter date, energy type (electricity or gas) and price, 
+Such that I can see a list of all energies I entered for sell, displaying the original price if weekday and the price with 10% discount on weekend
 
 
 

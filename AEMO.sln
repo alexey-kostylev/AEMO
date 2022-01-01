@@ -3,12 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEMO.API", "AEMO.API\AEMO.API.csproj", "{4BE79BCB-8A46-49F7-92F4-08B6C942D9AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AEMO.API", "AEMO.API\AEMO.API.csproj", "{4BE79BCB-8A46-49F7-92F4-08B6C942D9AB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B9E410AA-7C47-46C2-968E-A0B6D114634F}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		README.txt = README.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEMO.UnitTests", "AEMO.UnitTests\AEMO.UnitTests.csproj", "{19C5E004-6A82-48BD-84A5-03983273DBB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +23,10 @@ Global
 		{4BE79BCB-8A46-49F7-92F4-08B6C942D9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BE79BCB-8A46-49F7-92F4-08B6C942D9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BE79BCB-8A46-49F7-92F4-08B6C942D9AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19C5E004-6A82-48BD-84A5-03983273DBB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C5E004-6A82-48BD-84A5-03983273DBB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C5E004-6A82-48BD-84A5-03983273DBB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C5E004-6A82-48BD-84A5-03983273DBB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
