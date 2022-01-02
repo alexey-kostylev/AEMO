@@ -69,3 +69,8 @@ Run solution:
 ### Running UI
 <img src="./Transaction list.png">
 <img src="./Add transaction.png">
+
+## Azure deployments
+For CI/CD Github actions are used:
+	1. API - master_api.yml
+	2. WEB - master_ui.yml
