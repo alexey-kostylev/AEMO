@@ -16,8 +16,7 @@ export function validatePrice(control: AbstractControl): boolean {
   if (!control) {
     return false;
   }
-
-  // return true;
+  
   // debugger;
 
   const value = parseInt(control.value, 10);
