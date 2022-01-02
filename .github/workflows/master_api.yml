@@ -6,8 +6,12 @@ name: Build and deploy ASP.Net Core app to Azure Web App - AEMO.API
 on:
   push:
     branches: [master]
+    paths: 'AEMO.API/**'  
+    
   pull_request:
     branches: [ master ]
+    paths: 'AEMO.API/**'  
+    
   workflow_dispatch:
 
 jobs:
