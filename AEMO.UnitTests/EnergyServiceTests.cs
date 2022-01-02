@@ -14,9 +14,6 @@ namespace AEMO.UnitTests
 {
     public class EnergyServiceTests : IClassFixture<CustomTestFixture>
     {
-        private readonly CustomTestFixture _testFixture;
-        private IEnergyService _service;
-
         private IServiceProvider serviceProvider;
 
 
@@ -25,7 +22,6 @@ namespace AEMO.UnitTests
         public EnergyServiceTests(CustomTestFixture fixture)
         {
             serviceProvider = fixture.ServiceProvider;
-            _testFixture = fixture;
         }
 
         [Theory]
