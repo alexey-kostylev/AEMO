@@ -26,9 +26,10 @@ jobs:
       with:
         node-version: ${{ env.NODE_VERSION }}
     - name: npm install and build
+      working-directory: ./AEMO.WEB/aemo-web
       run: |
         npm install
-        npm run build -- --configuration=azure
+        npm run build
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v1
       with: 
