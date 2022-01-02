@@ -5,19 +5,10 @@ import { FormlyFieldConfig } from '@ngx-formly/core';
 import { EnergyService } from '../energy.service';
 import { Energy, EnergyCreate, EnergyType } from '../models';
 
-export const priceValidator = {
-  quote: {
-    expression: (c: AbstractControl) => validatePrice(c),
-    message: 'Price must be greater than zero',
-  },
-};
-
 export function validatePrice(control: AbstractControl): boolean {
   if (!control) {
     return false;
   }
-  
-  // debugger;
 
   const value = parseInt(control.value, 10);
 
